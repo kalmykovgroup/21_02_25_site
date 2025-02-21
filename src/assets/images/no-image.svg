@@ -1,0 +1,19 @@
+<svg
+        width="30"
+        height="30"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="gray"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+>
+    <!-- Граница -->
+    <rect x="5" y="5" width="90" height="90" rx="10" stroke="gray" stroke-width="4" fill="white"/>
+
+    <!-- Иконка камеры -->
+    <circle cx="50" cy="50" r="18" stroke="gray" stroke-width="4"/>
+    <circle cx="50" cy="50" r="6" fill="gray"/>
+    <path d="M35 40 L40 30 H60 L65 40" stroke="gray" stroke-width="4"/>
+</svg>

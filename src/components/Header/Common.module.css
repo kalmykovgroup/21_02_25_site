@@ -1,0 +1,15 @@
+.header_right_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0b0b0b;
+    font-size: 12px;
+}
+.header_right_item:hover{
+    color: #6c6000;
+}
+
+.header_right_item img{
+    width: 18px;
+}

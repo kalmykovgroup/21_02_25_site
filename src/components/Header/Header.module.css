@@ -1,0 +1,87 @@
+
+
+.header{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+
+
+.navigateContainer{
+    position: relative;
+    height: 76px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    background: white; /*нужен при затемнении*/
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+.navigations{
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr repeat(4, auto);
+    gap: 15px;
+    width: calc(100% - 80px);
+    max-width: 1472px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    grid-column: 1;
+}
+.menu{
+    grid-column: 2;
+}
+.search{
+    grid-column: 3;
+}
+.orders{
+    grid-column: 4;
+}
+.favourites{
+    grid-column: 5;
+}
+.cart{
+    grid-column: 6;
+}
+.profile{
+    grid-column: 7;
+}
+
+
+.categoryContainer{
+    width: 100%;
+    height: 0;
+    position: relative;
+    animation: showMenu .2s ease-out forwards;
+    z-index: 2;
+}
+
+@keyframes showMenu {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;}
+}
+
+
+
+

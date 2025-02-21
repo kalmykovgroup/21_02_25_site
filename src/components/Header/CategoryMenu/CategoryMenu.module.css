@@ -1,0 +1,164 @@
+
+.container{
+    position: absolute;
+    left: 0;
+    height:70vh;
+    width: 100%;
+    background: white;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    scrollbar-color: #494949 rgba(186, 186, 186, 0.3);
+}
+
+.categories{
+    color: black;
+    padding: 0 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: calc(100% - 80px);
+    max-width: 1472px;
+    margin: 0 auto;
+}
+
+.leftCategoryMenu{
+    width: 200px;
+    border-right: 1px solid #cdcdcd;
+}
+
+.leftCategoryMenu .active{
+    background: #efefef;
+}
+
+.categoryItem{
+    height: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 5px;
+
+    font-family: YS Text,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    gap: 5px;
+    justify-content: start;
+
+    color: #000;
+    cursor: pointer;
+}
+
+.categoryItem .icon{
+    width: 16px;
+}
+.categoryItem .name{
+    grid-column: 2;
+}
+.categoryItem .arrowIcon{
+    grid-column: 3;
+    width: 15px;
+    opacity: 0.5;
+}
+
+.rightCategoryContainer{
+    grid-column: 2;
+    padding: 0 0 150px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightCategoryContainer .bigTitle{
+    font-size: 28px;
+    height: 36px;
+    color: #222;
+    font-weight: 700;
+    line-height: 1.29;
+    transition: color .25s;
+    margin-bottom: 24px;
+    display: inline-block;
+    outline: none;
+    font-family: YS Text, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.rightCategoryContainer .bigTitle:hover{
+    color: red;
+}
+
+
+
+.rightCategoryContainer .categoryContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    justify-content: start;
+}
+
+.rightCategoryContainer .categoryContainer .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 250px;
+}
+
+.rightCategoryContainer .categoryContainer .titleOneSunCategory{
+    line-height: 16px;
+    overflow: hidden;
+    color: #222;
+    font-family: YS Text, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    margin-bottom: 4px;
+}
+.rightCategoryContainer .categoryContainer .titleOneSunCategory:hover{
+    color: red;
+}
+
+
+.categoryDownList{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryDownList .titleTwoSunCategory{
+    color: #2b2b2b;
+    overflow: hidden;
+    line-height: 16px;
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+.categoryDownList .titleTwoSunCategory:hover{
+    color: red;
+}
+
+.toggleButtonRollDown,
+.toggleButtonRollUp{
+    cursor: pointer;
+    line-height: 16px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.toggleButtonRollDown:hover,
+.toggleButtonRollUp:hover,
+.toggleButtonRollDown:hover svg,
+.toggleButtonRollUp:hover svg{
+    color: red;
+    fill: red;
+}
+
+.toggleButtonRollDown svg,
+.toggleButtonRollUp svg
+{
+    width: 17px;
+    fill: rgba(0, 0, 0, 0.4);
+}
+

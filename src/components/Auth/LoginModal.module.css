@@ -1,0 +1,24 @@
+/* Затемнённый фон */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.scrollbarPlaceholder{
+    height: 100vw;
+    background-color: #ececec;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+}
+
